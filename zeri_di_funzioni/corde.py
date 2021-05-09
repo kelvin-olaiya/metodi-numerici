@@ -11,7 +11,7 @@ def corde(func, dfunc, x0, tolx, tolf, max_iterazioni):
     xks.append(x0 - d) # x1
     fxk = func(xks[it]) # fx1
     it += 1
-    while it < max_iterazioni and abs(fxk) >= tolf and abs(d) >= tolx*abs(xks[it]):
+    while it < max_iterazioni and abs(fxk) >= tolf and abs(d) >= tolx*abs(xks[it-1]):
         x0 = xks[it-1] # it-1 perche parto xks parte da x1
         d = func(x0)/m
         xks.append(x0 -d)

@@ -11,8 +11,7 @@ def sign(x):
 def regula_falsi(func, a, b, tol, max_iterazioni):
     # Verifico che il metodo sia applicabile
     if sign(func(a)) == sign(func(b)):
-        return [],0,[]
-    
+        return [],0,[]  
     xks = []
     it = 0
     eps = np.spacing(1)

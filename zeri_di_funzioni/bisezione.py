@@ -14,8 +14,7 @@ def sign(x):
 def bisezione(func, a, b, tol):
     # Verifico che il metodo sia applicabile
     if sign(func(a)) == sign(func(b)):
-        return [],0,[]
-    
+        return [],0,[]   
     # Per il metodo di bisezione e possibile conoscere a priori
     # massimo numero di iterazioni
     max_iterazioni = int(math.ceil(math.log((b-a)/tol)/math.log(2)))
