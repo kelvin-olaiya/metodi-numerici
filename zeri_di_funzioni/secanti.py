@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun May  9 16:37:33 2021
-
-@author: kelvi
+Metodo delle secanti
 """
 
 # Funzione di comodo per il calcolo dell'incremento d
