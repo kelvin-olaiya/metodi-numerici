@@ -32,7 +32,7 @@ def bisezione(func, a, b, tol):
         elif sign(fxk) == sign(func(b)):
             b = xks[it]
         it += 1
-    return xks[it],it,xks # (zero, num_iterazioni, vettore di xk)
+    return xks[it-1],it,xks # (zero, num_iterazioni, vettore di xk)
     
     
     
