@@ -6,7 +6,7 @@ import numpy as np
 
 # L'unica differenza che c'e rispetto al metodo di newton e che
 # l'incremento d viene moltiplicato per m
-def newton(func, dfunc, x0, m, tolx, tolf, max_iterazioni):
+def newton_modificato(func, dfunc, x0, m, tolx, tolf, max_iterazioni):
     xks = []
     it = 0
     if not (abs(dfunc(x0) > np.spacing(1))): # per evitare di dividere per zero
