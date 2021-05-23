@@ -34,7 +34,7 @@ def solveU(U,b):
         return[],1
     x = np.zeros((n,1))
     for i in reversed(range(n)):
-        sommatoria = np.dot(U[i,i:i+1], x[:i])
+        sommatoria = np.dot(U[i,i+1:n], x[i+1:n])
         x[i] = (b[i] - sommatoria)/U[i:i]
     return x,0
 
