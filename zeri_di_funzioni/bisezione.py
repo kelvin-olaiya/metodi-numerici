@@ -25,7 +25,7 @@ def bisezione(func, a, b, tol):
         xks.append(a + (b-a)*0.5)  # Per calcolare il punto medio, utilizzo la formula stabile
         fxk = xks[it]
         if func(fxk) == 0:
-            break
+            return xks[it],it+1,xks
         elif sign(fxk) == sign(func(a)):
             a = xks[it]
         elif sign(fxk) == sign(func(b)):
