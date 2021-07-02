@@ -13,7 +13,7 @@ def polinomioLagrange(xnodi,k):
     if k == 0:
         xzeri = xnodi[1:]
     else:
-        xzeri = np.append(xnodi[0:k],xnodi[k+1:])
+        xzeri = np.delete(xnodi, k)
     num = np.poly(xzeri) # np.poly restituisce i coeff. del polinomi che ha per zeri xzeri
     den = np.polyal(num,xnodi[k]) # Il denominatore e il numeratore valutato in xk --> quindi e un numero
     return num/den
